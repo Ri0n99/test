@@ -1,0 +1,642 @@
+<html lang="en" data-bs-theme="dark">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Autoverse</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> 
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.j">
+    <link rel="icon" type="image/x-icon" href="Pink and Black Modern Initials Logo Design (3) - Shortcut.lnk">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+<link rel="stylesheet" href="style.css">
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+ 
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Welcome</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.topgear.com/">Top Gear</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.vulture.com/2015/04/29-greatest-car-movies-ever.html">Movies</a></li>
+                <li><a class="dropdown-item" href="https://www.zeroto60times.com/car-quizzes/">Test your knowledge</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://www.crazygames.com/t/car">Car games</a></li>
+              </ul>
+            </li>
+               </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    
+  
+    
+
+  <header>
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+
+      
+      
+  </header>
+  
+
+<main>
+
+  <section class="py-5 text-center container mt-0">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <style>
+          h1 {
+             font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+             
+          }
+         </style>
+        <h1>AUTOVERSE</h1>
+        
+        
+        <p class="lead text-body-secondary">Welcome to our comprehensive cars information website, where you can explore in-depth details, reviews, and specifications of various vehicles to make informed decisions for your next automotive journey.</p>
+       
+      </div>
+    </div>
+  </section>
+<h1>CARS</h1>
+<style>
+h1{
+  text-align: center;
+  font-size: 26;
+  font-family:Impact;
+  
+}
+
+</style>
+
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-3 row-cols-sm-2 row-cols-md-3 g-3 ">
+        <div class="col">
+          
+          <style>
+            div {
+             
+  padding: 15.5px;
+  box-sizing: border-box;
+            }
+          </style>
+ <div class="card shadow-sm">
+  <img id="myImage" src="ferrari f40.avif" alt="Click to watch a YouTube video">
+            <div class="card-body">
+              <p class="card-text">The Ferrari F40 (Type F120) is a mid-engine, rear-wheel drive sports car[12] engineered by Nicola Materazzi with styling by Pininfarina. It was built from 1987 until 1992, with the LM and GTE race car versions continuing production until 1994 and 1996 respectively.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+<script>
+  document.getElementById('myImage').addEventListener('click', function() {
+    window.open(`https://www.youtube.com/watch?v=mAhUtcXMyJ4&t=10s&pp=ygUSZmVycmFyaSBmNDAgcmV2aWV3`, '_blank');
+  });
+</script>
+                  <a href="https://en.wikipedia.org/wiki/Ferrari_F40" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+                  <style>
+                    p{
+                      display: flex;
+                      flex-direction: column;
+                    }
+                  </style>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            
+            <img id="myImage2" src="porsche 911.jpg" alt="Click to watch a YouTube video">
+
+            <div class="card-body">
+              <p class="card-text">The Porsche 911 (pronounced Nine Eleven or in German: Neunelf) is a two-door 2+2 high performance rear-engined sports car introduced in September 1964 by Porsche AG of Stuttgart, Germany. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage2').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=dzVr4cpNC58&t=312s&pp=ygUWcG9yc2NoZSA5MTEgcmV2aWV3IG9sZA%3D%3D', '_blank');
+                    });
+                  </script>
+                  <a href="https://en.wikipedia.org/wiki/Porsche_911" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          
+          <div class="card shadow-sm">
+            <img id="myImage3" src="2022volkswagenarteon.jpg" alt="Click to watch a YouTube video">
+
+            <div class="card-body">
+              <p class="card-text">The Volkswagen Arteon is a car manufactured by German car manufacturer Volkswagen. The Arteon was unveiled on 6 March 2017, at the Geneva Motor Show, and at the Chicago Auto Show for the North American market.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage3').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=GZyv7PhGqJM&pp=ygUYdm9sa3N3YWdlbiBhcnRlb24gcmV2aWV3', '_blank');
+                    });
+                  </script>
+                  <a href="https://en.wikipedia.org/wiki/Volkswagen_Arteon" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card shadow-sm">
+        <img id="myImage4" src="2019ford.webp" alt="Click to watch a YouTube video">
+        <div class="col-sm">
+         
+            <div class="card-body">
+              <p class="card-text">The Ford Mustang is a series of American automobiles manufactured by Ford. In continuous production since 1964, the Mustang is currently the longest-produced Ford car nameplate. Currently in its seventh generation, originally predicted to sell 100,000 vehicles yearly. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage4').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=-nTc3r8BhVo&pp=ygUTZm9yZCBtdXN0YW5nIHJldmlldw%3D%3D', '_blank');
+                    });
+                  </script>
+                   <p>click on the car image to see a video about the car</p>
+                  <a href="https://en.wikipedia.org/wiki/Ford_Mustang" >learn more</a>
+                  
+                </div>              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card shadow-sm">
+            <img id="myImage5" src="chevrolet camaro.jpg" alt="Click to watch a YouTube video">
+            <div class="card-body">
+              <p class="card-text">The Chevrolet Camaro is a mid-size American automobile manufactured by Chevrolet, classified as a pony car. It first went on sale on September 29, 1966, for the 1967 model year and was designed to compete with the Ford Mustang.The first-generation Camaro debuted in September 1966.  </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage5').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=o0vBLmJp9ck&pp=ygUXY2hldnJvbGV0IGNhbWFybyByZXZpZXc%3D', '_blank');
+                    });
+                  </script>
+                  <a href="https://en.wikipedia.org/wiki/Chevrolet_Camaro" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card shadow-sm">
+            <img id="myImage6" src="2023 lamborghini aventador.jpg" alt="Click to watch a YouTube video">
+            <div class="card-body">
+              <p class="card-text">The Lamborghini Aventador (Spanish pronunciation: [aβentaˈðoɾ]) is a mid-engine sports car produced by the Italian automotive manufacturer Lamborghini. The Aventador’s namesake is a Spanish fighting bull that fought in Zaragoza, Aragón, in 1993,it was produced in Italy</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage6').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=UZiHPLGh-Ek&pp=ygUcbGFtYm9yZ2hpbmkgYXZlbnRhZG9yIHJldmlldw%3D%3D', '_blank');
+                    });
+                  </script>
+                  <a href="https://en.wikipedia.org/wiki/Lamborghini_Aventador" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card shadow-sm">
+            <img id="myImage7" src="1996McLarenF1.jpg" alt="Click to watch a YouTube video">
+
+            <div class="card-body">
+              <p class="card-text">The McLaren F1 is a sports car designed and manufactured by British automobile manufacturer McLaren Cars and powered by the BMW S70/2 V12 engine.Gordon Murray insisted that the engine for this car be naturally aspirated to increase reliability and driver control.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage7').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=aXGtmv7vXrk&pp=ygUWMTk5NiBtY2xhcmVuIGYxIHJldmlldw%3D%3D', '_blank');
+                    });
+                  </script>
+                  <a href="https://en.wikipedia.org/wiki/McLaren_F1" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm"style="height: 800px; max-width: 500px;">
+          
+          <div class="card shadow-sm">
+            
+            <img id="myImage8" src="volskwagen jetta (a5).jpg" alt="Click to watch a YouTube video">
+
+            <div class="card-body">
+              <p class="card-text">The fifth-generation debuted at the Los Angeles Auto Show on 5 January 2005. After the New Beetle, it was the second Volkswagen product to make its world debut at a U.S. auto show. The Mark 5 sedan went on sale in the USA prior to any other country, reflecting the importance of the car in that market for Volkswagen.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage8').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=Y_G9dcwU5b8&pp=ygUddm9sa3N3YWdlbiBqZXR0YSAyMDEwIHJldmlldyA%3D', '_blank');
+                    });
+                  </script>
+                  <a href="https://en.wikipedia.org/wiki/Volkswagen_Jetta" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img id="myImage9" src="1997-toyota-supra-turbo-4.webp" alt="Click to watch a YouTube video">
+
+            <script>
+              document.getElementById('myImage9').addEventListener('click', function() {
+                window.open('https://www.youtube.com/watch?v=L29Aresm9Rg&pp=ygUZMTk5NyB0b3lvdGEgc3VwcmEgcmV2aWV3IA%3D%3D', '_blank');
+              });
+            </script>            <div class="card-body">
+              <p class="card-text">The A80 program began in February 1989 under various teams for design, product planning, and engineering led by Isao Tsuzuki. By the middle of 1990, a final A80 design concept from Toyota Technical Centre Aichi was approved and frozen for production in late 1990.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://en.wikipedia.org/wiki/Toyota_Supra" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+            <img id="myImage10" src="tesla model s.webp" alt="Click to watch a YouTube video">
+   
+              <p class="card-text">The Tesla Model S is a battery electric full-size car with a liftback body style built by Tesla, Inc. since 2012. The Model S features a battery-powered dual-motor, all-wheel drive layout, although earlier versions featured a rear-motor and rear-wheel drive layout.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage10').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=5H9RhmO4t-I&pp=ygUVdGVzbGEgbW9kZWwgcyByZXZpZXcg', '_blank');
+                    });
+                  </script>
+                  <a href="https://en.wikipedia.org/wiki/Tesla_Model_S" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <img id="myImage11" src="audi r8.jpg" alt="Click to watch a YouTube video">
+
+              <p class="card-text">The Audi R8 is a mid-engine, 2-seater sports car, which uses Audi's trademark quattro permanent all-wheel drive system. It was introduced by the German car manufacturer Audi AG in 2006. Production ended in 2023.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage11').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=pbzj6mvaHb8&pp=ygUPYXVkaSByOCByZXZpZXcg', '_blank');
+                    });
+                  </script>
+                  <a href="https://en.wikipedia.org/wiki/Audi_R8" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <img id="myImage12" src="mercedes AMG GT.jpg" alt="Click to watch a YouTube video">
+
+              <p class="card-text">The Mercedes-AMG GT is a series of 2-door grand tourers produced by German automobile manufacturer Mercedes-AMG. The car was introduced on 9 September 2014 and was officially unveiled to the public in October 2014 at the Paris Motor Show.The interior of the Mercedes-AMG GT was previewed on 16 April 2014.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage12').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=Y2j_IQVRiiU&pp=ygUXbWVyY2VkZXMgYW1nIGd0IHJldmlldyA%3DD', '_blank');
+                    });
+                  </script>
+                  <a href="https://en.wikipedia.org/wiki/Mercedes-AMG_GT" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img id="myImage13" src="BMW_M4.jpg" alt="Click to watch a YouTube video">
+
+            <div class="card-body">
+              <p class="card-text">The BMW M4 is a version of the BMW 4 Series automobile developed by BMW's motorsport division, BMW M, that has been built since 2014. As part of the renumbering that splits the coupé and convertible variants of the 3 Series into the 4 Series, the M4 replaced those variants of the BMW M3.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage13').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=FaGvFBLeYqs&pp=ygUOYm13IG00IHJldmlldyA%3D', '_blank');
+                    });
+                  </script>
+                  <a href="https://en.wikipedia.org/wiki/Mercedes-AMG_GT" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img id="myImage14" src="McLaren_720S.jpg" alt="Click to watch a YouTube video">
+
+            <div class="card-body">
+              <p class="card-text">The McLaren 720S is a sports car designed and manufactured by British automobile manufacturer McLaren Automotive. It is the second all-new car in the McLaren Super Series, replacing the 650S beginning in May 2017.The 720S was launched at the Geneva Motor Show on 7 March 2017 and is built on a modified carbon monocoque.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage14').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=6oZSSB5n_Eg&pp=ygUUbWNsYXJlbiA3MjBzIHJldmlldyA%3D', '_blank');
+                    });
+                  </script>
+                  <a href="https://en.wikipedia.org/wiki/McLaren_720S" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+           <img id="myImage15" src="Lamborghini gallardo.jpg" alt="Click to watch a YouTube video">
+
+            <div class="card-body"></div>
+              <p class="card-text">The Lamborghini Gallardo  is a sports car built by the Italian automotive manufacturer Lamborghini from 2003 to 2013. It is Lamborghini's second car released under parent company Audi, and the best-selling model at the time with 14,022 built throughout its production run</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage15').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=Hovbx6rvBaA&pp=ygUVbGFtYm8gZ2FsbGFyZG8gcmV2aWV3', '_blank');
+                    });
+                  </script>
+                  <a href="https://en.wikipedia.org/wiki/Lamborghini_Gallardo" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <img id="myImage16" src="Aston_Martin_DB11.jpg" alt="Click to watch a YouTube video">
+
+              <p class="card-text">The Aston Martin DB11 is a car produced by British marque Aston Martin from 2016 to 2023. A grand tourer, it debuted at the Geneva Motor Show in March 2016 as a replacement to the DB9.It is the first model launched in Aston Martin's 'second century' plan and the company's tie-up with Daimler AG.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage16').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=WTlOP6bUtmY&pp=ygUYQXN0b24gTWFydGluIERCMTEgcmV2aWV3', '_blank');
+                    });
+                  </script>
+                  <a href="https://en.wikipedia.org/wiki/Aston_Martin_DB11" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <img id="myImage17" src="Mercedes-Benz s class.jpg" alt="Click to watch a YouTube video">
+
+              <p class="card-text">The Mercedes-Benz S-Class, formerly known as Sonderklasse (German for "special class", abbreviated as "S-Klasse"), is a series of full-sized luxury sedans, limousines and armored sedans produced by the German automaker Mercedes-Benz.he S-Class has debuted many of the company's latest innovations, including drivetrain technologies, interior features, and safety systems (such as the first seatbelt pretensioners). </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage17').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=o86qjnOmyXs&pp=ygUcTWVyY2VkZXMtQmVueiBzIGNsYXNzIHJldmlldw%3D%3D', '_blank');
+                    });
+                  </script>
+                  <a href="https://en.wikipedia.org/wiki/Mercedes-Benz_S-Class" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <img id="myImage18" src="rolls royce ghost.jpg" alt="Click to watch a YouTube video">
+
+              <p class="card-text">The Rolls-Royce Ghost is a full-sized luxury car manufactured by Rolls-Royce Motor Cars. The "Ghost" nameplate, named in honour of the Silver Ghost, a car first produced in 1906, was announced in April 2009 at the Auto Shanghai show.The production model was officially unveiled at the 2009 Frankfurt Motor Show.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <script>
+                    document.getElementById('myImage18').addEventListener('click', function() {
+                      window.open('https://www.youtube.com/watch?v=3ikRMNlmgxI&pp=ygUdcm9sbHMgcm95Y2UgZ2hvcyBjbGFzcyByZXZpZXc%3D', '_blank');
+                    });
+                  </script>
+                  <a href="https://en.wikipedia.org/wiki/Rolls-Royce_Ghost" >learn more</a>
+                  <p>click on the car image to see a video about the car</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-body-secondary py-5">
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">See here the latest news about the car industry in Automotive News!</h5>
+          <p class="card-text">click below to see the news.</p>
+          <a href="https://www.autonews.com/" class="btn btn-primary">car news</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">See here if you need tip about your car or have a problem! this website will help you!</h5>
+          <p class="card-text">click below to see the car tips.</p>
+          <a href="https://mechanicbase.com/" class="btn btn-primary">car tips</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<div class="tips-section">
+  <h2>Tips for my website</h2>
+  <ul>
+    <li>if you press learn more on a car of your choosing its going to take you too a page that has more info. about the car.</li>
+    <li>when you press on any car image its going to take you to a video all about the car.</li>
+    <li>if you go to the dropdown you can see the best movies about cars , quiz yourself and play car games.</li>
+    <li>on the left of is "Top Gear" if you dont know what that it is it's fast-paced and stunt-filled motor show tests whether cars, both mundane and extraordinary, live up to their manufacturers' claims. I added their website but you can also watvh the show</li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+      <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5"/>
+    </svg>
+    <li>And above the tips there is two choices "car news" and "car tips" they can help you with car information or any questions.</li>
+  </ul>
+</div>
+    </body>
+</html>
